@@ -5,5 +5,5 @@
     <string name="CheckBoxText">Check this out!</string>
     <string name="SwitchText">Switch on/off</string>
     <string name="TextHint">Type Here</string>
-    <string name="toast_message">Here is more information</string>
+    <string name="ToastMessage">Here is more information</string>
 </resources>

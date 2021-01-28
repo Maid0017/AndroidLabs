@@ -7,20 +7,56 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="94dp"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
         android:layout_height="34dp"
         android:orientation="vertical"
         android:text="@string/hello_message"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="30dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="279dp"
+        android:layout_width="144dp"
         android:layout_height="wrap_content"
+        android:layout_below="@id/title"
         android:layout_weight="1"
+        android:onClick="@string/ToastMessage"
         android:text="@string/ButtonText" />
+
+    <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/button2"
+            android:layout_below="@id/title"
+            android:text="@string/CheckBoxText"
+            />
+
+    <ImageButton
+        android:id="@+id/flag"
+        android:layout_width="186dp"
+        android:layout_height="123dp"
+        android:layout_below="@id/button2"
+        android:src="@drawable/flag" />
+
+    <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/flag"
+        android:layout_alignTop="@id/flag"
+            android:text="@string/SwitchText" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flag"
+        android:layout_marginTop="2dp"
+        android:hint="@string/TextHint"
+        android:inputType="textPersonName|textCapWords" />
+
 
 </RelativeLayout>
