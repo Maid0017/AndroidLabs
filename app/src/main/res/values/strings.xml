@@ -1,9 +1,11 @@
 <resources>
-<string name="app_name">Android Labs</string>
-<string name="hello_message">Look at my Gui</string>
+    <string name="app_name">Android Labs</string>
+    <string name="hello_message">Look at my Gui</string>
     <string name="ButtonText">Click Here</string>
     <string name="CheckBoxText">Check this out!</string>
     <string name="SwitchText">Switch on/off</string>
     <string name="TextHint">Type Here</string>
     <string name="ToastMessage">Here is more information</string>
+    <string name="email" translatable="false">sharedpreferences.email</string>
+    <string name="password" translatable="false">sharedpreferences.password</string>
 </resources>

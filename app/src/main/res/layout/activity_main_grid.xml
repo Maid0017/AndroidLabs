@@ -16,9 +16,7 @@
         android:layout_column="0"
         android:orientation="vertical"
         android:text="@string/hello_message"
-        app:layout_columnSpan="2"
-        app:layout_columnWeight="1"
-        app:layout_rowSpan="1" />
+         />
 
     <Button
         android:id="@+id/button2"
@@ -28,9 +26,7 @@
         android:layout_column="0"
         android:layout_weight="1"
         android:text="@string/ButtonText"
-        app:layout_columnSpan="1"
-        app:layout_columnWeight="1"
-        app:layout_rowSpan="1" />
+   />
 
     <CheckBox
         android:id="@+id/checkbox"
@@ -40,9 +36,7 @@
         android:layout_column="2"
         android:layout_weight="1"
         android:text="@string/CheckBoxText"
-        app:layout_columnSpan="1"
-        app:layout_columnWeight="1"
-        app:layout_rowSpan="1" />
+/>
 
     <ImageButton
         android:layout_width="173dp"
@@ -51,8 +45,7 @@
         android:layout_column="0"
         android:layout_weight="1"
         android:src="@drawable/flag"
-        app:layout_columnSpan="1"
-        app:layout_columnWeight="1" />
+/>
 
     <Switch
         android:id="@+id/switch1"
