@@ -12,16 +12,20 @@ public class ProfileActivity extends AppCompatActivity {
 
     private ImageButton confirmImgBtn;
 
+    public static final String PROFILE_ACTIVITY = "ACTIVITY_PROFILE";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        confirmImgBtn = (ImageButton) findViewById(R.id.confirmImgBtn);
+        confirmImgBtn = findViewById(R.id.confirmImgBtn);
 
         confirmImgBtn.setOnClickListener(view -> {
             dispatchTakePictureIntent();
         });
+
+        Log.d(PROFILE_ACTIVITY, "In function: onCreate()");
+
     }
     static final int REQUEST_IMAGE_CAPTURE = 1;
 
@@ -39,36 +43,37 @@ public class ProfileActivity extends AppCompatActivity {
             Bundle extras = data.getExtras();
             Bitmap imageBitmap = (Bitmap) extras.get("data");
             confirmImgBtn.setImageBitmap(imageBitmap);
+            Log.d(PROFILE_ACTIVITY, "In function: onActivityResult()");
         }
     }
 
     @Override
     protected void onStart() {
         super.onStart();
+        Log.d(PROFILE_ACTIVITY, "In function: onStart()");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        Log.d(PROFILE_ACTIVITY, "In function: onResume()");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
+        Log.d(PROFILE_ACTIVITY, "In function: onPause()");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
+        Log.d(PROFILE_ACTIVITY, "In function: onStop()");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-    }
-
-    @Override
-    public void onActivityReenter(int resultCode, Intent data) {
-        super.onActivityReenter(resultCode, data);
+        Log.d(PROFILE_ACTIVITY, "In function: onDestroy()");
     }
 }

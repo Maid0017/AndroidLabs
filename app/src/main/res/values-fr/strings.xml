@@ -7,4 +7,14 @@
     <string name="SwitchText">Allumer / éteindre</string>
     <string name="TextHint">Écrivez ici</string>
     <string name="ToastMessage">Voici plus dinformations</string>
+    <string name="nameText">Votre Nom</string>
+    <string name="profileText">Votre Profil</string>
+    <string name="nameEdit">Entrez votre nom</string>
+    <string name="emailEdit">Entrer votre Email</string>
+    <string name="pictureText">Ta Photo:</string>
+    <string name="clickBtnText">Cliquez sur le bouton ci-dessus pour prendre une photo</string>
+    <string name="emailText">Entrez votre adresse email</string>
+    <string name="passwordText">Tapez votre mot de passe</string>
+    <string name="loginButton">S\'IDENTIFIER</string>
+    <string name="emailEdit2">Votre adresse email</string>
 </resources>

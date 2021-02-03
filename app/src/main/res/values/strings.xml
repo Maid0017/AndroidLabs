@@ -8,4 +8,14 @@
     <string name="ToastMessage">Here is more information</string>
     <string name="email" translatable="false">sharedpreferences.email</string>
     <string name="password" translatable="false">sharedpreferences.password</string>
+    <string name="nameText">Your Name:</string>
+    <string name="profileText">Your Profile</string>
+    <string name="nameEdit">Enter your name</string>
+    <string name="emailEdit">Enter your email</string>
+    <string name="pictureText">Your picture:</string>
+    <string name="clickBtnText">Click the button above to take a picture</string>
+    <string name="emailText">Enter your email address</string>
+    <string name="passwordText">Enter your password</string>
+    <string name="loginButton">LOGIN</string>
+    <string name="emailEdit2">Your email:</string>
 </resources>
