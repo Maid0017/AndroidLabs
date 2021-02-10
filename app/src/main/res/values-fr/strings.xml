@@ -17,4 +17,8 @@
     <string name="passwordText">Tapez votre mot de passe</string>
     <string name="loginButton">S\'IDENTIFIER</string>
     <string name="emailEdit2">Votre adresse email</string>
+    <string name="chatRoomBtn">Chat texte</string>
+    <string name="messageEditText">Tapez ici</string>
+    <string name="sendBtnText">Envoyer</string>
+    <string name="receiveBtnText">Recevoir</string>
 </resources>
