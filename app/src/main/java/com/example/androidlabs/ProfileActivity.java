@@ -7,10 +7,13 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.ImageButton;
 public class ProfileActivity extends AppCompatActivity {
 
     private ImageButton confirmImgBtn;
+    private Button chatRoomBtn;
+
 
     public static final String PROFILE_ACTIVITY = "ACTIVITY_PROFILE";
     @Override
@@ -24,7 +27,14 @@ public class ProfileActivity extends AppCompatActivity {
             dispatchTakePictureIntent();
         });
 
-        Log.d(PROFILE_ACTIVITY, "In function: onCreate()");
+        chatRoomBtn = findViewById(R.id.chatRoomBtn);
+
+        chatRoomBtn.setOnClickListener(view -> {
+            Intent chatRoom = new Intent(ProfileActivity.this, ChatRoomActivity.class);
+            startActivity(chatRoom);
+                });
+
+    Log.d(PROFILE_ACTIVITY, "In function: onCreate()");
 
     }
     static final int REQUEST_IMAGE_CAPTURE = 1;

@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         String email = emailEdit.getText().toString();
         mEditor.putString(getString(R.string.email), email);
         mEditor.commit();
-
         String password = passwordEdit.getText().toString();
         mEditor.putString(getString(R.string.password), password);
         mEditor.commit();

@@ -18,4 +18,14 @@
     <string name="passwordText">Enter your password</string>
     <string name="loginButton">LOGIN</string>
     <string name="emailEdit2">Your email:</string>
+    <string name="chatRoomBtn">Chat Room</string>
+    <string name="messageEditText">Type Here</string>
+    <string name="sendBtnText">Send</string>
+    <string name="receiveBtnText">Receive</string>
+    <string name="receiveMessage" translatable="false">Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Proin ante est, ullamcorper id nulla eu.</string>
+    <string name="sendMessage" translatable="false">Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Proin ante est, ullamcorper id nulla eu.</string>
+    <string name="receiverName" translatable="false">Luke</string>
+    <string name="senderName" translatable="false">Ryan</string>
 </resources>
