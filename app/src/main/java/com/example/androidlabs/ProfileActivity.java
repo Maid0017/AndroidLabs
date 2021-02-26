@@ -13,7 +13,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     private ImageButton confirmImgBtn;
     private Button chatRoomBtn;
-
+    private Button weatherBtn;
 
     public static final String PROFILE_ACTIVITY = "ACTIVITY_PROFILE";
     @Override
@@ -33,6 +33,13 @@ public class ProfileActivity extends AppCompatActivity {
             Intent chatRoom = new Intent(ProfileActivity.this, ChatRoomActivity.class);
             startActivity(chatRoom);
                 });
+
+        weatherBtn = findViewById(R.id.weatherBtn);
+
+        weatherBtn.setOnClickListener(view -> {
+            Intent weatherForecast = new Intent(ProfileActivity.this, WeatherForecast.class);
+            startActivity(weatherForecast);
+        });
 
     Log.d(PROFILE_ACTIVITY, "In function: onCreate()");
 

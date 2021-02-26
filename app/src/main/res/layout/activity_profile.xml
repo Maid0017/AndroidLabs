@@ -95,4 +95,14 @@
         android:text="@string/chatRoomBtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/clickBtnText" />
+
+    <Button
+        android:id="@+id/weatherBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/weatherBtn"
+        app:layout_constraintStart_toEndOf="@+id/chatRoomBtn"
+        app:layout_constraintTop_toBottomOf="@+id/clickBtnText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
