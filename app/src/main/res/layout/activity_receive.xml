@@ -7,7 +7,12 @@
     android:paddingVertical="10dp"
     android:paddingRight="15dp"
     android:paddingLeft="60dp"
-    android:clipToPadding="false">
+    android:clipToPadding="false"
+    android:layout_marginTop="27dp"
+    android:layout_marginBottom="27dp"
+    android:layout_marginLeft="48dp"
+    android:layout_marginRight="48dp"
+    >
 
 
     <View
