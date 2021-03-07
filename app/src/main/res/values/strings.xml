@@ -16,7 +16,7 @@
     <string name="clickBtnText">Click the button above to take a picture</string>
     <string name="emailText">Enter your email address</string>
     <string name="passwordText">Enter your password</string>
-    <string name="loginButton">LOGIN</string>
+    <string name="loginButton">Login</string>
     <string name="emailEdit2">Your email:</string>
     <string name="chatRoomBtn">Chat Room</string>
     <string name="messageEditText">Type Here</string>
@@ -28,5 +28,8 @@
         adipiscing elit. Proin ante est, ullamcorper id nulla eu.</string>
     <string name="receiverName" translatable="false">Luke</string>
     <string name="senderName" translatable="false">Ryan</string>
-    <string name="weatherBtn" >Weather</string>
+    <string name="weatherBtn">Weather</string>
+    <string name="item1">Item1</string>
+    <string name="item2">Item2</string>
+    <string name="item3">Item3</string>
 </resources>

@@ -4,12 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity"
-    android:layout_marginTop="27dp"
-    android:layout_marginBottom="27dp"
-    android:layout_marginLeft="48dp"
-    android:layout_marginRight="48dp"
-    >
+    tools:context=".ProfileActivity">
 
     <TextView
         android:id="@+id/profileText"
@@ -34,8 +29,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:nextFocusDown="@id/emailEdit"
         android:hint="@string/nameEdit"
+        android:nextFocusDown="@id/emailEdit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameText" />
@@ -54,11 +49,11 @@
     <EditText
         android:id="@+id/emailEdit"
         android:layout_width="0dp"
-        android:nextFocusDown="@id/confirmImgBtn"
-        android:nextFocusUp="@id/nameEdit"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="@string/emailEdit"
+        android:nextFocusUp="@id/nameEdit"
+        android:nextFocusDown="@id/confirmImgBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,10 +95,11 @@
     <Button
         android:id="@+id/chatRoomBtn"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
         android:nextFocusRight="@id/weatherBtn"
         android:nextFocusUp="@id/confirmImgBtn"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
         android:text="@string/chatRoomBtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/clickBtnText" />
@@ -111,11 +107,21 @@
     <Button
         android:id="@+id/weatherBtn"
         android:layout_width="wrap_content"
-        android:nextFocusLeft="@id/weatherBtn"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="184dp"
         android:layout_marginTop="28dp"
+        android:nextFocusLeft="@id/weatherBtn"
         android:text="@string/weatherBtn"
         app:layout_constraintStart_toEndOf="@+id/chatRoomBtn"
+        app:layout_constraintTop_toBottomOf="@+id/clickBtnText" />
+
+    <Button
+        android:id="@+id/toolbarBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="Go to Toolbar page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/clickBtnText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

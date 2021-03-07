@@ -14,6 +14,7 @@ public class ProfileActivity extends AppCompatActivity {
     private ImageButton confirmImgBtn;
     private Button chatRoomBtn;
     private Button weatherBtn;
+    private Button toolbarBtn;
 
     public static final String PROFILE_ACTIVITY = "ACTIVITY_PROFILE";
     @Override
@@ -41,6 +42,12 @@ public class ProfileActivity extends AppCompatActivity {
             startActivity(weatherForecast);
         });
 
+        toolbarBtn = findViewById(R.id.toolbarBtn);
+        toolbarBtn.setOnClickListener(view -> {
+            Intent TestToolbar = new Intent(this, TestToolbar.class);
+            startActivityForResult(TestToolbar, 0);
+        });
+
     Log.d(PROFILE_ACTIVITY, "In function: onCreate()");
 
     }
@@ -53,9 +60,11 @@ public class ProfileActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == 0 && resultCode == 500) {
+            finish();
+        }
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             Bundle extras = data.getExtras();
             Bitmap imageBitmap = (Bitmap) extras.get("data");

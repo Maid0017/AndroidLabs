@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="@string/loginButton"
+        android:icon="@drawable/ic_login"
+        android:id="@+id/loginItem" />
+    <item
+        android:title="@string/weatherBtn"
+        android:icon="@drawable/ic_weather"
+        android:id="@+id/weatherItem" />
+    <item
+        android:title="@string/chatRoomBtn"
+        android:icon="@drawable/ic_chat"
+        android:id="@+id/chatItem" />
+
+</menu>

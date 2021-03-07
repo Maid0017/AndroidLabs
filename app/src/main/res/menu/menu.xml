@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title="@string/item1"
+        android:icon="@drawable/ic_item1"
+        android:id="@+id/item1"
+        app:showAsAction="always|never"/>
+    <item
+        android:title="@string/item2"
+        android:icon="@drawable/ic_item2"
+        android:id="@+id/item2"
+        app:showAsAction="always|never"/>
+    <item
+        android:title="@string/item3"
+        android:icon="@drawable/ic_item3"
+        android:id="@+id/item3"
+        app:showAsAction="always|never"/>
+
+</menu>

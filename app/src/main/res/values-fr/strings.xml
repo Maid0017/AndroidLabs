@@ -22,4 +22,7 @@
     <string name="sendBtnText">Envoyer</string>
     <string name="receiveBtnText">Recevoir</string>
     <string name="weatherBtn">Le Temps</string>
+    <string name="item1">Item1</string>
+    <string name="item2">Item2</string>
+    <string name="item3">Item3</string>
 </resources>
